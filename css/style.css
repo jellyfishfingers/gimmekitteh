@@ -1,25 +1,45 @@
+html {
+    position: relative; 
+    min-height: 100%;
+
+}
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #b8b8b8;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #e6dedd;
+    margin: 0 0 60px 0; 
+    color: black;
+    font-weight: bold;
+
 }
 
 .header { 
-    margin: 0 auto;
-    /*background-color: #CC875C;*/
+    background-color: #c81912;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0px;
+    font-size: 30px;
+}
+
+.header p { 
+    padding: 0px;
+    margin: 0px 0px 20px 0px;
 }
 
 .headerWrap { 
     margin: 0 auto;
-    width: 50%;
+    width: 90%;
 }
 
 .header h1 {
     position: relative;
     color: #ffffff;
-    margin-top:20px;
-    padding-left:20px;
-    font-size: 40px;
+    margin-top:10px;
+    margin-bottom: 5px;
+    font-size: 65px;
+    font-weight: bold; 
     font-family: lato, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     /*font-family: 'Fredoka One', cursive;*/
     text-shadow: #7a7a7a 4px 3px 0;
 }
@@ -54,11 +74,30 @@ body {
     top: 15px;
 }
 
+.contentdiv { 
+    margin: auto 0px;
+    text-align: center;
+    padding: 20px;
+}
+
 .kittypicdiv { 
     width: 50%;
     margin: 20px auto;
     border: 1px solid #000000;
 }
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-image: url("../image/catarms.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    height: 400px;
+  }
 
 
 .newkittybtn {
@@ -107,6 +146,10 @@ body {
 @media only screen and (max-width: 600px) {
     .kittypicdiv {
         width: 90%;
+    }
+    
+    .header h1 {
+        font-size: 50px;
     }
 }
 
