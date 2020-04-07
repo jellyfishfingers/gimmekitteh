@@ -10,15 +10,15 @@
 
         callKitty();
 
-        $(".newkitty").click(function(){
+        $(".newkittybtn").click(function(){
            callKitty();
         });
 
+
         function callKitty() {
             $.getJSON("https://api.thecatapi.com/v1/images/search?mime_types=gif",function(data){
-                console.log(data);
                 var caturl = data[0].url;   
-                $(".kittypic").html("<img src='" + caturl + "' width='100%'>");
+                $(".kittypicdiv").html("<img src='" + caturl + "' width='100%'>");
             });
         }
 
@@ -31,14 +31,17 @@
             <div class="headerWrap">
                 <img src="image/cat.png" width="50px" height="50px">
                 <h1>Gimme Kitty</h1>
-
             </div>
         </div>
         
-        <button class="newkitty">Click for new kitteh</button>
+        <button class="newkittybtn">Click for new kitteh</button>
         
 
-        <div class="kittypic"></div>
+        <div class="kittypicdiv">
+                
+
+
+        </div>
 
         <p>Built by <a href="mailto:lian.jiayuan@gmail.com">Lian Jiayuan</a></p>
         <p>Kitteh Pics from <a href="https://thecatapi.com">theCatAPI</a></p>

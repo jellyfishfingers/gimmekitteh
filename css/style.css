@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-background-color: #FFE7CC;
+    background-color: #b8b8b8;
 }
 
 .header { 
@@ -10,21 +10,23 @@ background-color: #FFE7CC;
 
 .headerWrap { 
     margin: 0 auto;
-    width: 200px;
+    width: 50%;
 }
 
 .header h1 {
     position: relative;
-    color: #000000;
+    color: #ffffff;
     margin-top:20px;
     padding-left:20px;
-    font-size: 25px;
-    font-family: 'Fredoka One', cursive;
+    font-size: 40px;
+    font-family: lato, sans-serif;
+    /*font-family: 'Fredoka One', cursive;*/
+    text-shadow: #7a7a7a 4px 3px 0;
 }
 
 .header img { 
     padding: 10px;
-    
+    margin: auto 0px;
 }
 
 .boxes {
@@ -52,17 +54,14 @@ background-color: #FFE7CC;
     top: 15px;
 }
 
-.kittypic { 
-    width: 100%;
+.kittypicdiv { 
+    width: 50%;
     margin: 20px auto;
     border: 1px solid #000000;
 }
 
 
-
-
-
-.newkitty {
+.newkittybtn {
 	-moz-box-shadow: 3px 4px 0px 0px #899599;
 	-webkit-box-shadow: 3px 4px 0px 0px #899599;
 	box-shadow: 3px 4px 0px 0px #899599;
@@ -87,7 +86,7 @@ background-color: #FFE7CC;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #e1e2ed;
 }
-.newkitty:hover {
+.newkittybtn:hover {
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bab1ba), color-stop(1, #ededed));
 	background:-moz-linear-gradient(top, #bab1ba 5%, #ededed 100%);
 	background:-webkit-linear-gradient(top, #bab1ba 5%, #ededed 100%);
@@ -98,25 +97,43 @@ background-color: #FFE7CC;
 	background-color:#bab1ba;
 }
 
-.newkitty:active {
+.newkittybtn:active {
 	position:relative;
 	top:1px;
 }
 
-        
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .kittypicdiv {
+        width: 90%;
+    }
+}
 
-/* For mobile phones: */
-[class*="col-"] {
-	
-    width: 100%;
-  }
-  
-  
-  
-  @media only screen and (min-width: 768px) {
-    /* For desktop: */
-    .kittypic {width: 50%;}
-	.woodlandscheckpoint {width:50%;};
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {    
+    .kittypicdiv {
+        width: 90%; 
+    }
+}
 
-  }
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {    
+    .kittypicdiv {
+        width: 90%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {    
+    .kittypicdiv {
+        width: 50%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {    
+    .kittypicdiv {
+        width: 50%;
+    }
+}
