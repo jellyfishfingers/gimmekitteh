@@ -1,8 +1,9 @@
 html {
     position: relative; 
     min-height: 100%;
-
+    margin-bottom: 0px;
 }
+
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: #e6dedd;
@@ -83,20 +84,20 @@ body {
 .kittypicdiv { 
     width: 50%;
     margin: 20px auto;
-    border: 1px solid #000000;
+    border: 1px solid #000000;    
+    background-image: url("../image/catarms.png");
+    background-repeat: no-repeat;
 }
 
 .footer {
-    position: absolute;
+    position:absolute;
     left: 0;
     bottom: 0;
     width: 100%;
-    color: white;
     text-align: center;
-    background-image: url("../image/catarms.png");
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    height: 400px;
+    height: 100px;
+    padding-top: 20px;
+    font-size: 13px;
   }
 
 
@@ -141,15 +142,28 @@ body {
 	top:1px;
 }
 
+.catbottom { 
+    position: fixed;
+    width: 440px;
+    height: 220px;
+    right: 0px; 
+    bottom: 0px;
+    background-image: url("../image/catarms.png");
+    background-repeat: no-repeat;
+}
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .kittypicdiv {
         width: 90%;
     }
+
+
+    
     
     .header h1 {
-        font-size: 50px;
+        font-size: 80px !important;
     }
 }
 
@@ -158,6 +172,8 @@ body {
     .kittypicdiv {
         width: 90%; 
     }
+
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
