@@ -7,6 +7,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/045074a477.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     </head>
 
     <script>
@@ -18,6 +19,9 @@
            callKitty();
         });
 
+        $(".dogBtn").click(function(){
+            $(".grumpycatno").show().delay(2000).fadeOut('slow');
+        });
 
         function callKitty() {
             $.getJSON("https://api.thecatapi.com/v1/images/search?mime_types=gif",function(data){
@@ -31,6 +35,11 @@
 
     <body>
 
+        <div class="grumpycatno">
+                <img src="image/Grumpy_Cat_No_02.jpg" width='100%'>
+            
+        </div>
+
         <div class="header">
             <div class="headerWrap">
                 <h1><i class="fas fa-cat"></i> Gimme Kitteh</h1>
@@ -39,7 +48,9 @@
         </div>
         
         <div class="contentdiv">
-            <button class="newkittybtn">Click for new kitteh</button>
+            <button type="button" class="btn btn-primary btn-lg newkittybtn">Click for new kitteh</button>
+            <button type="button" class="btn btn-secondary btn-lg dogBtn">See doggo instead</button>
+            
             <div class="kittypicdiv"></div>
         </div>
 

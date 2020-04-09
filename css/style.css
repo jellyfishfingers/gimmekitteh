@@ -50,6 +50,17 @@ body {
     margin: auto 0px;
 }
 
+.grumpycatno { 
+    width: 30%;
+    z-index: 99999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    display:none;
+}
+
+
 .boxes {
     width: 300px;
     height: 300px;
@@ -100,7 +111,7 @@ body {
     font-size: 13px;
   }
 
-
+/*
 .newkittybtn {
 	-moz-box-shadow: 3px 4px 0px 0px #899599;
 	-webkit-box-shadow: 3px 4px 0px 0px #899599;
@@ -140,7 +151,7 @@ body {
 .newkittybtn:active {
 	position:relative;
 	top:1px;
-}
+}*/ 
 
 .catbottom { 
     position: fixed;
@@ -159,6 +170,9 @@ body {
         width: 90%;
     }
 
+    .grumpycatno { 
+        width: 80%;
+    }
 
     
     
@@ -173,6 +187,10 @@ body {
         width: 90%; 
     }
 
+    .grumpycatno { 
+        width: 80%;
+    }
+
 
 }
 
@@ -181,6 +199,11 @@ body {
     .kittypicdiv {
         width: 90%;
     }
+
+    .grumpycatno { 
+        width: 30%;
+    }
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -188,6 +211,11 @@ body {
     .kittypicdiv {
         width: 50%;
     }
+
+    .grumpycatno { 
+        width: 30%;
+    }
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -195,4 +223,9 @@ body {
     .kittypicdiv {
         width: 50%;
     }
+    
+    .grumpycatno { 
+        width: 30%;
+    }
+
 }

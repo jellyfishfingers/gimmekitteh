@@ -5,7 +5,7 @@
 Have a look at the project over at https://jellyfishfingers.github.io/gimmekitteh/
 
 ## What you need to know
-HTML, CSS, jQuery
+HTML, CSS, jQuery, JSON
 
 ## Installation
 Download / Clone the project into your computer, and open the index.html in your favourite text editor. 
