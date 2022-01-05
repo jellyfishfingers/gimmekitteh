@@ -39,3 +39,7 @@ The jQuery function I've built will make an API request and appends my HTML info
         });
     }
 ```
+
+#Possible Enhancement I'll like to try
+
+* Change this to use Javascript instead of the JQuery library. 
